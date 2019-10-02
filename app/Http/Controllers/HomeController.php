@@ -30,9 +30,24 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function login(Request $request)
     {
-        //
+        $parameter = [
+            'phoneEmail' => $request->nohp,
+            'password' => $request->password
+        ];
+
+
+        $response = Guzzle::post($parameter, env('API_URL'), '/auth/auth');
+        $request->session()->put('memberLog', $response['data']->data);
+        return redirect()->back();
+        // dd($response);
+    }
+
+    public function logout(Request $request)
+    {
+        $request->session()->forget('memberLog');
+        return redirect()->back();
     }
 
     /**

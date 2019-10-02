@@ -16,13 +16,22 @@
           <ul class="navbar-nav ml-auto">
                 <li class="nav-item mr-3">
                         <a class="nav-link" href="#"><span class="iconify" style="font-size: 17px;" data-icon="fa-solid:shopping-cart" data-inline="false"></span></a>
-                    </li>              
+                    </li>  
+                    @if (Session::has('memberLog'))
+                    <li class="nav-item">
+                    <a class="nav-link text-capitalize" href="javascript:void(0)">{{ Session::get('memberLog')->fullName }}</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="{{ route('logout') }}">Logout</a>
+                                    </li>
+                        @else
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="javascript:void(0)">Masuk</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#">Daftar</a>
                 </li>
+                @endif
           </ul>
         </div>
       </nav>

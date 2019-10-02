@@ -16,3 +16,5 @@
 // });
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::post('login-api', 'HomeController@login')->name('login.api');
+Route::get('logout', 'HomeController@logout')->name('logout');

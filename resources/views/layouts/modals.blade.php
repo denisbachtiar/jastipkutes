@@ -11,10 +11,13 @@
                     <h5 class="mb-0"><b>Masuk</b></h5>
                     <p class="mb-0 ml-auto text-success">Daftar</p>
                 </div>
-                <form>
+                <form action="{{ route('login.api') }}" method="POST">
+                    @csrf
                         <div class="form-group">
                           <label for="exampleInputEmail1"><small>Nomor Ponsel atau Email</small></label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                          <input type="text" class="form-control" id="exampleInputEmail1" name="nohp" aria-describedby="emailHelp" placeholder="+6285799365743">
+                          <label for="exampleInputEmail1"><small>Password</small></label>
+                          <input type="password" class="form-control" id="exampleInputEmail1" name="password" aria-describedby="emailHelp" placeholder="rahasia">
                           <small id="emailHelp" class="form-text text-muted">Contoh: email@gmail.com</small>
                         </div>
                         <button type="submit" class="btn btn-secondary" style="width: 100%;">Selanjutnya</button>
