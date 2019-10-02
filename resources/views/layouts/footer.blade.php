@@ -1,6 +1,7 @@
 <footer>
     <div class="foot">
     <div class="container">
+        <div class="d-flex">
     <div class="footer-item">
         <ul style="">
             <li><a href="javascript:void(0)"><small>Tentang</small></a></li>
@@ -55,6 +56,25 @@
                     </div>
                 </div>
                 </div>
+            </div>
 </div>
 </div>
+
+<div class="foot">
+        <div class="container">
+            <div class="d-flex">
+                <div>
+                    <p class="mb-0"><small>© 2009-2019, Jastipku</small></p>
+                    <p class="mb-1"><small>Server process time: 0.135 secs.</small></p>
+                </div>
+                <div class="ml-auto">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-success">Indonesia</button>
+                                <button type="button" class="btn btn-dark">English</button>
+                              </div>
+                </div>
+            </div>
+        </div>
+</div>
+
 </footer>

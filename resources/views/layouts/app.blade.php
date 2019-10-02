@@ -3,10 +3,12 @@
 @include('layouts.header')
 <body>
     @include('layouts.navbar')
-    
-    @yield('content')   
+    <div style="margin-top: 80px;">
+    @yield('content') 
+
     @include('layouts.footer')
     @include('layouts.modals')
+</div>  
     @include('layouts.scripts')
 </body>
 </html>

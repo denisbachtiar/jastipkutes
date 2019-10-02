@@ -38,3 +38,9 @@
     border-color: $primary;
     box-shadow: 0 0 0 1px $primary;
 }
+
+.btn {
+    &.btn-success {
+        background-color: $primary;
+    }
+}

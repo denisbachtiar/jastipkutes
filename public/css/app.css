@@ -1,6 +1,11 @@
 @charset "UTF-8";
 .navbar {
   background-color: #008374;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 999;
+  box-shadow: 0 2px 6px 0 rgba(49, 53, 59, 0.12);
 }
 .navbar .nav-link {
   color: white !important;
@@ -11,6 +16,14 @@
 }
 .navbar .form-inline .form-control {
   width: 100%;
+}
+
+a.text-black {
+  color: rgba(49, 53, 59, 0.96);
+}
+a.text-black:hover {
+  color: rgba(148, 148, 148, 0.96);
+  text-decoration: unset;
 }
 
 button:focus {
@@ -81,7 +94,6 @@ button:focus {
 }
 
 .footer-item {
-  float: left;
   width: 13.5%;
 }
 .footer-item ul {
@@ -228,5 +240,9 @@ button:focus {
 .form-control:focus {
   border-color: #008374;
   box-shadow: 0 0 0 1px #008374;
+}
+
+.btn.btn-success {
+  background-color: #008374;
 }
 /*# sourceMappingURL=app.css.map*/

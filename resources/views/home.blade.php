@@ -109,6 +109,7 @@
                             </div>
                     </div>
                 </div>
+
                 <div class="regularcat mt-1 mb-0">
                     @foreach ($listcat as $itemcat)
                 <div class="category-badge"><p class="mb-0"><small>{{ $itemcat->category }}</small></p></div>
@@ -117,12 +118,87 @@
             </div>
         </div>
 
+        <div class="mt-5 mb-5">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="mb-0"><b>Paling Banyak Dicari</b></h5>
+                <h5 class="mb-0 ml-auto text-success"><small><b>Muat Lainnya</b></small></h5>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                        <div class="card p-2 shadow-box no-border">
+                                <div class="d-flex">
+                                    <img src="https://ecs7.tokopedia.net/img/cache/200-square/product-1/2019/5/25/465009484/465009484_fc3caef6-41b7-4c66-b311-bbdc39e0fd46_700_700.jpg" height="64" width="64" alt="">
+                                    <div class="ml-2">
+                                        <p class="mb-0"><b>Redmi 6a Tam</b></p>
+                                        <p class="mb-0"><small>Redmi 6a Tam</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                <div class="col-md-3">
+                        <div class="card p-2 shadow-box no-border">
+                                <div class="d-flex">
+                                    <img src="https://ecs7.tokopedia.net/img/cache/200-square/attachment/2018/8/25/153516549476279/153516549476279_c510774b-8221-4347-86fd-d936a100f729.png" height="64" width="64" alt="">
+                                    <div class="ml-2">
+                                        <p class="mb-0"><b>Masker 3m</b></p>
+                                        <p class="mb-0"><small>11rb Produk</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                <div class="col-md-3">
+                        <div class="card p-2 shadow-box no-border">
+                                <div class="d-flex">
+                                    <img src="https://ecs7.tokopedia.net/img/cache/200-square/product-1/2019/6/15/25048247/25048247_6d80ca71-f086-47f5-94ab-ecf5005631f3_1229_1229" height="64" width="64" alt="">
+                                    <div class="ml-2">
+                                        <p class="mb-0"><b>Salt nic</b></p>
+                                        <p class="mb-0"><small>32rb Produk</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                <div class="col-md-3">
+                        <div class="card p-2 shadow-box no-border">
+                                <div class="d-flex">
+                                    <img src="https://ecs7.tokopedia.net/img/cache/200-square/product-1/2017/9/26/342523/342523_fbe9031d-b772-4e09-9a4b-9c5a6a2b0b12_850_850.jpg" height="64" width="64" alt="">
+                                    <div class="ml-2">
+                                        <p class="mb-0"><b>Talang AC</b></p>
+                                        <p class="mb-0"><small>6rb Produk</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="mb-0"><b>Official Store</b></h5>
+                        <h5 class="mb-0 ml-auto text-success"><small><b>Lihat Semua</b></small></h5>
+                    </div>
+                    <div class="d-flex align-items-center">
+                            <img style="width: 33.33%;" src="https://ecs7.tokopedia.net/img/cache/200-square/attachment/2019/10/1/20723472/20723472_dca9da48-cf6d-41d9-96b2-f59c7fbec188.png" alt="">
+                            <img style="width: 33.33%;" src="https://ecs7.tokopedia.net/img/cache/200-square/attachment/2019/10/1/20723472/20723472_5a82c540-508d-4a18-8a35-e1516ada2e3f.png" alt="">
+                            <img style="width: 33.33%;" src="https://ecs7.tokopedia.net/img/cache/200-square/attachment/2019/10/1/20723472/20723472_3fe2f244-930e-49e5-987c-f91a88244813.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-3"><b>Top Trending</b></h5>
+                    <div class="d-flex align-items-center">
+                            <img style="width: 33.33%;" src="https://ecs7.tokopedia.net/img/cache/200-square/attachment/2018/11/19/26958584/26958584_06f060b8-df4e-4951-9149-1252f7f7b97b.jpg" alt="">
+                            <img style="width: 33.33%;" src="https://ecs7.tokopedia.net/img/cache/200-square/attachment/2019/2/22/26958584/26958584_d9c84550-425f-4c27-8557-4da74973e028.jpg" alt="">
+                            <img style="width: 33.33%;" src="https://ecs7.tokopedia.net/img/cache/200-square/attachment/2018/12/6/20723472/20723472_1075b7a9-84ab-48e7-8231-1bbae560d976.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="mt-4 parent-product">
             @foreach ($product as $itemprod)
             <div class="card product pb-1">
                     <img src="{{ $itemprod->image1}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h6 class="card-title"><b>{{ $itemprod->productName}}</b></h6>
+                    <h6 class="card-title"><b><a href="javascript:void(0)" class="text-black">{{ $itemprod->productName}}</a></b></h6>
                       <p class="card-text text-danger"><b>Rp {{ number_format($itemprod->price,0,",",".") }}</b></p>
                       {{-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
                     </div>

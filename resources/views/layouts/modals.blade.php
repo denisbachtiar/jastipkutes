@@ -15,7 +15,7 @@
                     @csrf
                         <div class="form-group">
                           <label for="exampleInputEmail1"><small>Nomor Ponsel atau Email</small></label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" name="nohp" aria-describedby="emailHelp" placeholder="+6285799365743">
+                          <input type="text" class="form-control mb-2" id="exampleInputEmail1" name="nohp" aria-describedby="emailHelp" placeholder="+6285799365743">
                           <label for="exampleInputEmail1"><small>Password</small></label>
                           <input type="password" class="form-control" id="exampleInputEmail1" name="password" aria-describedby="emailHelp" placeholder="rahasia">
                           <small id="emailHelp" class="form-text text-muted">Contoh: email@gmail.com</small>
