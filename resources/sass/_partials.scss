@@ -1,3 +1,6 @@
+button:focus {
+    outline: none;
+}
 .shadow-box {
     box-shadow: 0 1px 6px 0 rgba(49, 53, 59, 0.12);
     &.right {
@@ -97,7 +100,7 @@
 .iconify {
     &.left-arrow {
         position: absolute;
-    top: 50%;
+    top: 45%;
     display: block;
     width: 30px;
     left: -35px;
@@ -106,7 +109,7 @@
     }
     &.right-arrow {
         position: absolute;
-    top: 50%;
+    top: 45%;
     display: block;
     width: 30px;
     right: -35px;
@@ -115,7 +118,7 @@
     }
     &.left-arrow-cat {
         position: absolute;
-    top: 35%;
+    top: 40%;
     display: block;
     z-index: 9;
     width: 30px;
@@ -125,7 +128,7 @@
     }
     &.right-arrow-cat {
         position: absolute;
-    top: 35%;
+    top: 40%;
     z-index: 9;
     display: block;
     width: 30px;
@@ -133,4 +136,43 @@
     height: 30px;
     padding: 0;
     }
+}
+
+.btn-slick {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 7px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  /* opacity: .2; */
+}
+
+.slick-active {
+  /* opacity: .5; */
+}
+
+.slick-current {
+  opacity: 1;
 }

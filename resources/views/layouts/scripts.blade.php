@@ -36,8 +36,8 @@ $('.center').slick({
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 1,
-  prevArrow:"<span class='iconify left-arrow' data-icon='ion:arrow-back-circle-sharp' data-inline='false'></span>",
-  nextArrow:"<span class='iconify right-arrow' data-icon='ion:arrow-forward-circle' data-inline='false' aria-label='next'></span>",
+  prevArrow:"<buton class='btn-slick'><span class='iconify left-arrow cursor-pointer' aria-label='prev' data-icon='ion:arrow-back-circle-sharp' data-inline='false'></span></button>",
+  nextArrow:"<button class='btn-slick'><span class='iconify right-arrow cursor-pointer' data-icon='ion:arrow-forward-circle' data-inline='false' aria-label='next'></span></button>",
   responsive: [
     {
       breakpoint: 768,
@@ -65,7 +65,7 @@ $(".regular").slick({
         slidesToShow: 4,
         slidesToScroll: 4,
         arrows: true,
-        prevArrow:"<span class='iconify left-arrow-cat' data-icon='ion:arrow-back-circle-sharp' data-inline='false'></span>",
-  nextArrow:"<span class='iconify right-arrow-cat' data-icon='ion:arrow-forward-circle' data-inline='false' aria-label='next'></span>",
+        prevArrow:"<button class='btn-slick'><span class='iconify left-arrow-cat cursor-pointer' data-icon='ion:arrow-back-circle-sharp' data-inline='false'></span></button>",
+  nextArrow:"<button class='btn-slick'><span class='iconify right-arrow-cat cursor-pointer' data-icon='ion:arrow-forward-circle' data-inline='false' aria-label='next'></span></button>",
       });
 </script>

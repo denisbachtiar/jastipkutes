@@ -1,39 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<style>
-     .slider {
-        width: 50%;
-        margin: 100px auto;
-    }
-
-    .slick-slide {
-      margin: 0px 7px;
-    }
-
-    .slick-slide img {
-      width: 100%;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: black;
-    }
-
-
-    .slick-slide {
-      transition: all ease-in-out .3s;
-      /* opacity: .2; */
-    }
-    
-    .slick-active {
-      /* opacity: .5; */
-    }
-
-    .slick-current {
-      opacity: 1;
-    }
-</style>
     <div class="container">
             <div class="center mt-4">
                     @foreach ($banner as $itembanner)
@@ -152,7 +119,7 @@
 
         <div class="mt-4 parent-product">
             @foreach ($product as $itemprod)
-            <div class="card product">
+            <div class="card product pb-1">
                     <img src="{{ $itemprod->image1}}" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h6 class="card-title"><b>{{ $itemprod->productName}}</b></h6>

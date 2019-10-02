@@ -13,6 +13,10 @@
   width: 100%;
 }
 
+button:focus {
+  outline: none;
+}
+
 .shadow-box {
   box-shadow: 0 1px 6px 0 rgba(49, 53, 59, 0.12);
 }
@@ -114,7 +118,7 @@
 
 .iconify.left-arrow {
   position: absolute;
-  top: 50%;
+  top: 45%;
   display: block;
   width: 30px;
   left: -35px;
@@ -123,7 +127,7 @@
 }
 .iconify.right-arrow {
   position: absolute;
-  top: 50%;
+  top: 45%;
   display: block;
   width: 30px;
   right: -35px;
@@ -132,7 +136,7 @@
 }
 .iconify.left-arrow-cat {
   position: absolute;
-  top: 35%;
+  top: 40%;
   display: block;
   z-index: 9;
   width: 30px;
@@ -142,13 +146,51 @@
 }
 .iconify.right-arrow-cat {
   position: absolute;
-  top: 35%;
+  top: 40%;
   z-index: 9;
   display: block;
   width: 30px;
   right: -10px;
   height: 30px;
   padding: 0;
+}
+
+.btn-slick {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.slider {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 7px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  /* opacity: .2; */
+}
+
+.slick-active {
+  /* opacity: .5; */
+}
+
+.slick-current {
+  opacity: 1;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
@@ -181,5 +223,10 @@
   max-width: 20%;
   padding: 0 0.8% 3%;
   box-sizing: border-box;
+}
+
+.form-control:focus {
+  border-color: #008374;
+  box-shadow: 0 0 0 1px #008374;
 }
 /*# sourceMappingURL=app.css.map*/
