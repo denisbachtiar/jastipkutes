@@ -39,6 +39,10 @@ class HomeController extends Controller
 
 
         $response = Guzzle::post($parameter, env('API_URL'), '/auth/auth');
+        if ($response['status_code'] != 200) {
+            $message = $response['data']->message;
+            return redirect()->back()->withErrors(['errorlogin' => $message])->withInput();
+        }
         $request->session()->put('memberLog', $response['data']->data);
         return redirect()->back();
         // dd($response);
